@@ -39,6 +39,10 @@ header {
     color: white;
 }
 
+.eodadwa:hover {
+    color: #000000;
+}
+
 .oaud {
     text-decoration: none;
 }
