@@ -205,6 +205,12 @@ footer p {
     direction: rtl;
 }
 
+@media (max-width: 768px) {
+    .course {
+        flex: 1 1 100%; /* هر کارت در موبایل کل عرض خط را می‌گیرد */
+    }
+}
+
 .course img {
     width: 100%;
     border-radius: 5px;
@@ -249,12 +255,6 @@ main {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .product-card {
-      flex: 1 1 100%;
-    }
 }
 
 .product-details {
