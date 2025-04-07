@@ -315,7 +315,7 @@ main {
 
 @media (max-width: 768px) {
     .related-item {
-        width: 100% !important; /* کارت‌ها روی موبایل یک خط کامل را اشغال می‌کنند */
+        width: calc(100%) !important; /* کارت‌ها روی موبایل یک خط کامل را اشغال می‌کنند */
     }
 }
 
