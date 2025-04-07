@@ -340,7 +340,7 @@ main {
 
 @media (max-width: 768px) {
     .related-item {
-        flex: 1 1 100%; /* هر کارت در موبایل کل عرض خط را می‌گیرد */
+        width: 100% !important; /* اطمینان از اعمال این قانون */
     }
 }
 
