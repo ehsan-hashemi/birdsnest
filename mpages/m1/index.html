@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds Nest</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" href="../../icon.png">
+</head>
+<body>
+    <header>
+        <a class="oaud" href="https://birdsnest.ir">
+            <div class="hecac">
+                <img class="icon" src="../../icon.png" alt="icon birdsnest, آیکون آشیانه پرنده, آیکون هدهد">
+                <h1>Birds Nest</h1>
+            </div>
+        </a>
+        <div class="alhh">
+            <a class="eodadwa" href="">خانه</a> |
+            <a class="eodadwa" href="">عروس هلندی</a> |
+            <a class="eodadwa" href="">کوتوله برزیلی</a> |
+            <a class="eodadwa" href="">مکمل</a> |
+            <a class="eodadwa" href="">وبلاگ</a>
+        </div>
+    </header>
+    <main>
+        <br>
+        <section class="product">
+            <div class="product-image">
+                <img src="../../basalam_images/m1.jpg" alt="تصویر محصول">
+            </div>
+            <div class="product-details">
+                <h1>خوراک اقتصادی عروس هلندی و کوتوله برزیلی و مرغ عشق ۹۴۰ گرمی</h1>
+                <p class="price">۷۸٬۰۰۰ تومان</p>
+                <p class="description">
+                    این بهترین خوراک برای پرنده های زینتی می‌باشد.
+                </p>
+                <button class="buy-btn" onclick="window.open('https://basalam.com/parandehzinaty/product/13265573', '_blank')">خرید از باسلام</button>
+            </div>
+        </section>
+
+        <section class="additional-details">
+            <h2>مشخصات محصول</h2>
+            <ul>
+                <li><strong>وزن:</strong> ۱ کیلوگرم</li>
+                <li><strong>روش استفاده:</strong> محصول را قبل از استفاده به‌خوبی تکان دهید و طبق دستورالعمل استفاده کنید.</li>
+                <li><strong>جنس:</strong> پلاستیک درجه یک</li>
+                <li><strong>تاریخ تولید:</strong> فروردین ۱۴۰۴</li>
+            </ul>
+        </section>        
+
+        <section class="related-products">
+            <h2>محصولات مشابه</h2>
+            <div class="related-list">
+                <div class="related-item">
+                    <img src="related1.jpg" alt="محصول مشابه ۱">
+                    <p class="pts1">خوراک اقتصادی عروس هلندی و کوتوله برزیلی و مرغ عشق ۹۴۰ گرمی</p>
+                    <p>قیمت: ۳۰٬۰۰۰ تومان</p>
+                </div>
+                <div class="related-item">
+                    <img src="related2.jpg" alt="محصول مشابه ۲">
+                    <p class="pts1">محصول مشابه ۲</p>
+                    <p>قیمت: ۴۰٬۰۰۰ تومان</p>
+                </div>
+                <div class="related-item">
+                    <img src="related3.jpg" alt="محصول مشابه ۳">
+                    <p class="pts1">محصول مشابه ۳</p>
+                    <p>قیمت: ۳۵٬۰۰۰ تومان</p>
+                </div>
+            </div>
+        </section>     
+    </main>
+    <br>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>دسته‌بندی‌ها</h3>
+            <ul>
+              <li><a href="https://birdsnest.ir">خانه</a></li>
+              <li><a href="">عروس هلندی</a></li>
+              <li><a href="">کوتوله برزیلی</a></li>
+              <li><a href="">مکمل</a></li>
+              <li><a href="">وبلاگ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <div class="fotas">
+                <h3>تماس با ما</h3>
+                <a class="dfsgg" href="mailto:info@sgtmarket.ir" target="_blank">ایمیل: info@birdsnest.ir</a>
+                <br>
+                <a class="dfsgg" href="tel:09143654519" target="_blank">تلفن: 09143654519</a>
+                <br>
+                <a class="dfsgg" href="https://eitaa.com/misagh20000" target="_blank">ادمین ایتا: @misagh20000</a>
+                <br>
+                <a class="dfsgg" href="https://ehsan-hashemi.ir" target="_blank">سازنده: ehsan hashemi</a>
+            </div>
+          </div>
+          <div class="footer-section social-media">
+            <h3>ما را دنبال کنید</h3>
+            <a href="https://eitaa.com/birdsnest" target="_blank"><img src="https://s6.picofile.com/file/8389773534/04.png" alt="ایتا"></a>
+            <a href="https://basalam.com/parandehzinaty?sh=co" target="_blank"><img src="../../image.png" alt="باسلام"></a>
+          </div>
+        </div>
+        <div class="footer-content">
+            <p class="pte1">© 2025. Birds Nest. All rights are reserved.</p>
+            <div class="social-icons">
+                <a href="https://ehsan-hashemi.github.io/M-Programming-Group"><img src="../../icon.png" alt="icon"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // تنظیم حداکثر تعداد کاراکترها
+        let maxLength = 30;
+
+        // انتخاب تمامی عناصر با کلاس eja1
+        let elements = document.querySelectorAll('.pts1');
+
+        elements.forEach(element => {
+            // بررسی و کوتاه کردن متن
+            let fullText = element.textContent;
+            if (fullText.length > maxLength) {
+                element.textContent = fullText.substring(0, maxLength) + "...";
+            }
+        });
+    </script>
+</body>
+</html>

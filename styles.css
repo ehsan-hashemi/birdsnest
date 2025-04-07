@@ -20,7 +20,7 @@ header {
     background-color: #f26114;
 }
 
-.container {
+.hecac {
     direction: ltr;
     display: flex;
     align-items: center; 
@@ -183,6 +183,7 @@ footer p {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center; /* وسط‌چین کردن محصولات در هر خط */
+    direction: rtl;
 }
 
 .row {
@@ -227,3 +228,133 @@ footer p {
     background-color: red;
 }
 
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+      flex: 1 1 100%;
+    }
+}
+
+.product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    color: #f26114;
+    text-align: right;
+}
+
+.price {
+    font-size: 20px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    background-color: #f26114;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-family: Dubai;
+}
+
+.buy-btn:hover {
+    background-color: red;
+}
+
+.related-products h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.related-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.related-item {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.related-item img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.related-item p {
+    margin: 5px 0;
+}
+
+.additional-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.additional-details h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.additional-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.additional-details li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.additional-details li strong {
+    color: #f26114;
+}
