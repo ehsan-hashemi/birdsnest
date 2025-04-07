@@ -313,6 +313,12 @@ main {
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .related-item {
+        width: 100% !important; /* کارت‌ها روی موبایل یک خط کامل را اشغال می‌کنند */
+    }
+}
+
 .related-item img {
     width: 100%;
     max-width: 150px;
@@ -336,12 +342,6 @@ main {
 
 .details-buy-btn:hover {
     background-color: red;
-}
-
-@media (max-width: 768px) {
-    .related-item {
-        width: 100% !important; /* اطمینان از اعمال این قانون */
-    }
 }
 
 .additional-details {
