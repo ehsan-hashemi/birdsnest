@@ -338,6 +338,7 @@ main {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+    font-family: Dubai;
 }
 
 .details-buy-btn:hover {
@@ -371,4 +372,62 @@ main {
 
 .additional-details li strong {
     color: #f26114;
+}
+
+/* کانتینر اسلایدر اعلان‌ها */
+.hero-slider {
+    position: relative;
+    background: linear-gradient(to right, #f26114, #ff8c42);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* اسلایدهای اعلان‌ها */
+.slides {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    /* تنظیم پس‌زمینه با تصویر و رنگ جایگزین */
+    background: url('./basalam_images/m1.jpg');
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* نشانگرهای زیر اسلایدر (دایره‌ها) */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dot.active {
+    background-color: #ff8c42;
 }
