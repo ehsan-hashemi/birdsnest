@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birds Nest</title>
+    <title>Birds Nest | صفحه اصلی</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./icon.png">
 </head>
@@ -27,9 +27,8 @@
         <br>
         <section class="hero-slider">
             <div class="slides">
-                <div class="slide active">بهترین خوراک پرنده‌ها در Birds Nest</div>
-                <div class="slide 2">ارسال سریع با بهترین بسته‌بندی</div>
-                <div class="slide">تخفیف ویژه محصولات برای مدت محدود</div>
+                <div class="slide active">با خرید از این سایت، ۱۰٪ تخیف بگیرید. کد: Site0212</div>
+                <button class="copy-btn" onclick="copyToClipboard()">کپی کردن کد</button>
             </div>
         </section>        
         <div class="container">
@@ -105,7 +104,7 @@
         <div class="footer-content">
             <p class="pte1">© 2025. Birds Nest. All rights are reserved.</p>
             <div class="social-icons">
-                <a href="https://ehsan-hashemi.github.io/M-Programming-Group"><img src="icon.png" alt="icon"></a>
+                <a href="https://ehsan-hashemi.ir"><img src="icon.png" alt="icon"></a>
             </div>
         </div>
     </footer>
@@ -123,6 +122,14 @@
                 element.textContent = fullText.substring(0, maxLength) + "...";
             }
         });
+    </script>
+    <script>
+        function copyToClipboard() {
+            const textToCopy = "Site0212";
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => alert("کد تخفیف '" + textToCopy + "' کپی شد!"))
+                .catch(err => console.error("خطا در کپی کردن متن: ", err));
+        }
     </script>
 </body>
 </html>

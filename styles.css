@@ -387,13 +387,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* اسلایدهای اعلان‌ها */
-.slides {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-}
-
 .slide {
     min-width: 100%;
     padding: 20px;
@@ -402,32 +395,29 @@ main {
     color: white;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-
-    /* تنظیم پس‌زمینه با تصویر و رنگ جایگزین */
-    background: url('./basalam_images/m1.jpg');
+    direction: auto;
 }
 
 .slide.active {
     opacity: 1;
 }
 
-/* نشانگرهای زیر اسلایدر (دایره‌ها) */
-.dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.copy-btn {
+    background-color: #f26114; /* رنگ پس‌زمینه */
+    color: #ffffff; /* رنگ متن */
+    border: 2px solid #f26114; /* حاشیه */
+    border-radius: 5px; /* انحنا */
+    padding: 10px 20px; /* فاصله داخلی */
+    font-size: 16px; /* اندازه فونت */
+    cursor: pointer; /* حالت اشاره‌گر */
+    transition: all 0.3s ease-in-out; /* انیمیشن‌ها */
+    margin-top: 20px; /* فاصله از بالا */
+    z-index: 100;
+    
 }
 
-.dot {
-    width: 15px;
-    height: 15px;
-    background: white;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.dot.active {
-    background-color: #ff8c42;
+.copy-btn:hover {
+    background-color: hsl(0, 0%, 100%); /* رنگ پس‌زمینه هنگام هاور */
+    color: #f26114; /* رنگ متن هنگام هاور */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه هنگام هاور */
 }
