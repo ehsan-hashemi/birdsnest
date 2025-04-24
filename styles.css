@@ -352,6 +352,7 @@ main {
 
 .details-buy-btn:hover {
     background-color: red;
+    font-family: "Vazir";
 }
 
 .additional-details {
