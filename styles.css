@@ -530,3 +530,13 @@ main {
     color: #f26114; /* رنگ متن هنگام هاور */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه هنگام هاور */
 }
+
+.addh1hb {
+    background-color: red;
+}
+
+.addh1hb p {
+    text-align: center;
+    color: white;
+    font-size: large;
+}
