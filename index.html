@@ -9,20 +9,31 @@
 </head>
 <body>
     <script>
+        // بارگذاری هدر
         fetch('header.html')
-        then(response => response.text()).
-        then(data. => {
-            data = 
-        })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // بارگذاری فوتر
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
     </script>
+    <div id="header"></div>
+    <br>
+    <div class="imgh1hr"><img src="/images/Negar_1745228543209-.jpg" alt=""></div>
     <main>
-        <br>
+        <br>  
         <section class="hero-slider">
             <div class="slides">
-                <div class="slide active">با خرید از این سایت، ۱۰٪ تخیف بگیرید.</div>
-                <button class="copy-btn" onclick="copyToClipboard()">کپی کردن کد</button>
+                <div class="slide active">کتاب سیر تا پیاز عروس هلندی</div>
+                <button class="copy-btn" onclick="window.location.href='/mpages/m8'">جزئیات و خرید محصول</button>
             </div>
-        </section>        
+        </section>
         <div class="container">
             <div class="course">
                 <img src="./basalam_images/m1.jpg" alt="تصویر محصول">
@@ -37,10 +48,10 @@
                 <button class="btn" onclick="window.location.href='/mpages/m2/'">جزئیات و خرید محصول</button>
             </div>
             <div class="course">
-                <img src="./basalam_images/m3.jpg" alt="تصویر محصول">
-                <h3 class="eja1">خوراک اقتصادی عروس هلندی و کوتوله برزیلی و مرغ عشق ۹۴۰ گرمی</h3>
-                <p>قیمت: ۶۸٬۰۰۰ تومان</p>
-                <button class="btn" onclick="window.location.href='/mpages/m3/'">جزئیات و خرید محصول</button>
+                <img src="./basalam_images/m8.jpg" alt="تصویر محصول">
+                <h3 class="eja1">کتاب سیر تا پیاز عروس هلندی. آشنایی با نژادها، بیماری ها و تغذیه عروس هلندی ها</h3>
+                <p>قیمت: ۱۵۰,۰۰۰ تومان</p>
+                <button class="btn" onclick="window.location.href='/mpages/m8/'">جزئیات و خرید محصول</button>
             </div>
             <div class="course">
                 <img src="./basalam_images/m4.jpg" alt="تصویر محصول">
@@ -63,49 +74,7 @@
         </div>        
     </main>
     <br>
-    <footer>
-        <div class="footer-container">
-          <div class="footer-section">
-            <h3>دسته‌بندی‌ها</h3>
-            <ul>
-              <li><a href="/">خانه</a></li>
-              <li><a href="">انواع خوراک پرندگان</a></li>
-              <li><a href="">انواع قفس</a></li>
-              <li><a href="">انواع اسباب بازی</a></li>
-              <li><a href="">انواع آبخوری</a></li>
-              <li><a href="">انواع مکمل</a></li>
-              <li><a href="">انواع دانخوری</a></li>
-              <li><a href="">انواع لوازم جانبی قفس</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <div class="fotas">
-                <h3>تماس با ما</h3>
-                <a class="dfsgg" href="mailto:Bahramyj6@gmail.com" target="_blank">ایمیل: Bahramyj6@gmail.com</a>
-                <br>
-                <a class="dfsgg" href="tel:09904213711" target="_blank">تلفن: 09904213711</a>
-                <br>
-                <a class="dfsgg" href="https://eitaa.com/birdsnest_stor" target="_blank">ادمین ایتا: @birdsnest_stor</a>
-                <br>
-                <a class="dfsgg" href="https://instagram.com/birdsnest_stor" target="_blank">ادمین اینستاگرام</a>
-                <br>
-                <a class="dfsgg" href="https://ehsan-hashemi.ir" target="_blank">سازنده: ehsan hashemi</a>
-            </div>
-          </div>
-          <div class="footer-section social-media">
-            <h3>ما را دنبال کنید</h3>
-            <a href="https://eitaa.com/birdsnest" target="_blank"><img src="https://s6.picofile.com/file/8389773534/04.png" alt="ایتا آشیانه پرندگان"></a>
-            <a href="https://basalam.com/parandehzinaty?sh=co" target="_blank"><img src="./images/basalam.png" alt="باسلام آشیانه پرندگان"></a>
-            <a href="https://instagram.com/birdsnest_stor"><img src="./images/feather_instagram.svg" alt="اینستاگرام آشیانه پرندگان"></a>
-          </div>
-        </div>
-        <div class="footer-content">
-            <p class="pte1">© 2025. Birds Nest. All rights are reserved.</p>
-            <div class="social-icons">
-                <a href="https://ehsan-hashemi.ir" target="_blank"><img src="icon.png" alt="icon"></a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
     <script>
         // تنظیم حداکثر تعداد کاراکترها
         let maxLength = 50;
