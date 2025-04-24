@@ -183,6 +183,11 @@ footer p {
     text-align: right;
 }
 
+.iconf2f {
+    margin-right: 10px;
+    margin-right: 10px; 
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
