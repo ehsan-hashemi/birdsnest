@@ -385,7 +385,7 @@ main {
 }
 
 .imgh1hr {
-    width: 60%;
+    width: 80%;
     max-width: 1000px; /* حداکثر عرض برای صفحه‌های بزرگ‌تر */
     aspect-ratio: 16 / 9; /* نسبت ابعاد ۱۶ به ۹ */
     margin: 0 auto; /* مرکز قرار دادن div */
