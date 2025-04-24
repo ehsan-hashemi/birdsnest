@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(../fonts/Vazir-Regular.ttf);
+  }
+
 body {
-    font-family: Dubai, Arial;
+    font-family: "Vazir";
     background-color: whitesmoke;
     margin: 0;
     padding: 0;
@@ -227,7 +232,7 @@ footer p {
     width: 100%;
     text-align: center;
     border-radius: 5px;
-    font-family: Dubai;
+    font-family: "Vazir";
 }
 
 .btn:hover {
@@ -290,7 +295,7 @@ main {
     cursor: pointer;
     text-align: center;
     font-size: 16px;
-    font-family: Dubai;
+    font-family: "Vazir";
 }
 
 .buy-btn:hover {
@@ -413,6 +418,7 @@ main {
     transition: all 0.3s ease-in-out; /* انیمیشن‌ها */
     margin-top: 20px; /* فاصله از بالا */
     z-index: 100;
+    font-family: "Vazir";
     
 }
 
