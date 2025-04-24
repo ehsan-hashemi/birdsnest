@@ -286,6 +286,10 @@ main {
     margin: 10px 0;
 }
 
+.colorp1em {
+    color: brown;
+}
+
 .buy-btn {
     padding: 10px 20px;
     background-color: #f26114;
