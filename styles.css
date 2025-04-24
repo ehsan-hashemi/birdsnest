@@ -183,6 +183,80 @@ footer p {
     text-align: right;
 }
 
+/* تبلیغ */
+.content {
+    font-family: "Vazir";
+    line-height: 1.6;
+    color: #333;
+    margin: 20px;
+  }
+  
+  .inline-ad {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px auto; /* مرکزیت افقی */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%; /* عرض کمتر از صفحه */
+    max-width: 800px; /* حداکثر عرض */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* برای برچسب تبلیغ */
+  }
+  
+  .inline-ad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .inline-ad img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px; /* فاصله بین تصویر و متن */
+  }
+  
+  .ad-details {
+    flex: 1; /* استفاده از فضای باقی‌مانده */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* فاصله بین عنوان و توضیحات */
+  }
+  
+  .ad-details h3 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+    color: #f26114;
+  }
+  
+  .ad-details p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .inline-ad a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ad-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #f26114;
+    color: white;
+    font-size: 12px;
+    font-family: "Vazir", Arial, sans-serif;
+    padding: 3px 8px; /* اندازه مناسب برچسب تبلیغ */
+    border-radius: 4px;
+  }
+  
+  
+
 .iconf2f {
     margin-right: 10px;
     margin-right: 10px; 
