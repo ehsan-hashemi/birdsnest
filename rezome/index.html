@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds Nest | صفحه اصلی</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/icon.png">
+</head>
+<body>
+    <script>
+        // بارگذاری هدر
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // بارگذاری فوتر
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+    <div id="header"></div>
+    <br>
+    <h1>رزومه</h1>
+    <br>
+    <div class="imgh1hr"><img src="/images/Negar_1745228543209-.jpg" alt="آشیانه پرندگان"></div>
+    <br>
+    <div class="imgh1hr"><img src="/images/Negar_17452285432092.jpg" alt="آشیانه پرندگان"></div>
+    <br>
+    <div style="text-align: center;">
+        <audio style="border: 1px solid black; padding: 5px; border-radius: 100px;" src="" controls>
+            <source scr="" type="audio/mpeg">
+        </audio>
+    </div>
+    <br>
+    <div id="footer"></div>
+</body>
+</html>
