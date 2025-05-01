@@ -8,21 +8,29 @@
     <link rel="icon" href="../../icon.png">
 </head>
 <body>
-    <header>
-        <a class="oaud" href="/">
-            <div class="hecac">
-                <img class="icon" src="../../icon.png" alt="آیکون آشیانه پرنده">
-                <h1>Birds Nest</h1>
-            </div>
-        </a>
-        <nav class="alhh">
-            <a class="eodadwa" href="/">خانه</a> |
-            <a class="eodadwa" href="#">عروس هلندی</a> |
-            <a class="eodadwa" href="#">کوتوله برزیلی</a> |
-            <a class="eodadwa" href="#">مکمل</a> |
-            <a class="eodadwa" href="#">وبلاگ</a>
-        </nav>
-    </header>
+    <script>
+        // بارگذاری هدر
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // بارگذاری فوتر
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+        
+        // تبلیغ
+        fetch('/adds/adds1.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('adds1').innerHTML = data;
+            }); 
+    </script>
+    <div id="header"></div>
     <main>
         <section class="product">
             <div class="product-image">
@@ -68,16 +76,16 @@
             <h2>محصولات مشابه</h2>
             <div class="related-list">
                 <div class="related-item">
+                    <img src="../../basalam_images/m1.jpg" alt="عکس محصول مشابه">
+                    <p class="pts1">خوراک اقتصادی عروس هلندی و کوتوله برزیلی و مرغ عشق ۹۴۰ گرمی</p>
+                    <p>قیمت: ۷۸٬۰۰۰ تومان</p>
+                    <button class="details-buy-btn" onclick="window.location.href='/mpages/m1/'">جزئیات و خرید محصول</button>
+                </div>
+                <div class="related-item">
                     <img src="../../basalam_images/m3.jpg" alt="عکس محصول مشابه">
                     <p class="pts1">خوراک اقتصادی عروس هلندی و کوتوله برزیلی و مرغ عشق ۹۴۰ گرمی</p>
                     <p>قیمت: ۶۸٬۰۰۰ تومان</p>
                     <button class="details-buy-btn" onclick="window.location.href='/mpages/m3/'">جزئیات و خرید محصول</button>
-                </div>
-                <div class="related-item">
-                    <img src="../../basalam_images/m4.jpg" alt="عکس محصول مشابه">
-                    <p class="pts1">بذر ارزن ویژه انواع پرنده زینتی 940 گرمی با هزینه ارسال عالی</p>
-                    <p>قیمت: ۳۹٬۰۰۰ تومان</p>
-                    <button class="details-buy-btn" onclick="window.location.href='/mpages/m4/'">جزئیات و خرید محصول</button>
                 </div>
                 <div class="related-item">
                     <img src="../../basalam_images/m5.jpg" alt="عکس محصول مشابه">
@@ -88,47 +96,12 @@
             </div>
         </section>
     </main>
+    <div id="adds1"></div>
     <br>
-    <footer>
-        <div class="footer-container">
-          <div class="footer-section">
-            <h3>دسته‌بندی‌ها</h3>
-            <ul>
-              <li><a href="/">خانه</a></li>
-              <li><a href="">عروس هلندی</a></li>
-              <li><a href="">کوتوله برزیلی</a></li>
-              <li><a href="">مکمل</a></li>
-              <li><a href="">وبلاگ</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <div class="fotas">
-                <h3>تماس با ما</h3>
-                <a class="dfsgg" href="mailto:info@sgtmarket.ir" target="_blank">ایمیل: info@birdsnest.ir</a>
-                <br>
-                <a class="dfsgg" href="tel:09143654519" target="_blank">تلفن: 09143654519</a>
-                <br>
-                <a class="dfsgg" href="https://eitaa.com/misagh20000" target="_blank">ادمین ایتا: @misagh20000</a>
-                <br>
-                <a class="dfsgg" href="https://ehsan-hashemi.ir" target="_blank">سازنده: ehsan hashemi</a>
-            </div>
-          </div>
-          <div class="footer-section social-media">
-            <h3>ما را دنبال کنید</h3>
-            <a href="https://eitaa.com/birdsnest" target="_blank"><img src="https://s6.picofile.com/file/8389773534/04.png" alt="ایتا"></a>
-            <a href="https://basalam.com/parandehzinaty?sh=co" target="_blank"><img src="../../image.png" alt="باسلام"></a>
-          </div>
-        </div>
-        <div class="footer-content">
-            <p class="pte1">© 2025. Birds Nest. All rights are reserved.</p>
-            <div class="social-icons">
-                <a href="https://ehsan-hashemi.ir" target="_blank"><img src="../../icon.png" alt="icon"></a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
     <script>
         // تنظیم حداکثر تعداد کاراکترها
-        let maxLength = 40;
+        let maxLength = 32;
 
         // انتخاب تمامی عناصر با کلاس eja1
         let elements = document.querySelectorAll('.pts1');
