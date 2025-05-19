@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Vazir";
-    src: url(../fonts/Vazir-Regular.ttf);
+    src: url(/fonts/Vazir-Regular.ttf);
   }
 
 body {
@@ -87,7 +87,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 0px;
     direction: rtl;
     text-align: right;
 }
@@ -258,9 +258,9 @@ footer p {
   
 
 .iconf2f {
-    margin-right: 10px;
-    margin-right: 10px; 
-    border-radius: 10px; 
+    margin-right: 5px;
+    margin-right: 5px; 
+    border-radius: 5px; 
 }
 
 .container {
