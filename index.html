@@ -42,6 +42,7 @@
     <a href="/rezome/"><div class="imgh1hr"><img src="/images/Negar_1745228543209-.jpg" alt="آشیانه پرندگان"></div></a>
     <main>
         <br>  
+        @blog
         <section class="hero-slider">
             <div class="slides">
                 <div class="slide active">کتاب سیر تا پیاز عروس هلندی</div>
@@ -124,6 +125,12 @@
             header.classList.remove("shrink");
         }
     });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // انتخاب تمام متن‌های صفحه
+            document.body.innerHTML = document.body.innerHTML.replace(/@(\w+)/g, '<a href="https://birdsnest.ir/$1">@$1</a>');
+        });
     </script>
 </body>
 </html>
