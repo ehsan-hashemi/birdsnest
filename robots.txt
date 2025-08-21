@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /
 Disallow: /test/
+Disallow: /header.html/
+Disallow: /footer.html/
+Disallow: /404.html/
+Disallow: /blog/header.html/
+Disallow: /blog/footer.html/
+Disallow: /blog/404.html/
+Disallow: /adds/
+Disallow: /fonts/
 
 Sitemap: https://birdsnest.ir/sitemap.xml
